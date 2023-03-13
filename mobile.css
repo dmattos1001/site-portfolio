@@ -89,16 +89,22 @@
 
   .section-experiences-card {
     width: 90vw;
+   
   }
 
   .section-portfolio-grid {
     row-gap: 36px;
     grid-template-columns: auto;
     margin-top: 24px;
+    
   }
 
   .hero-info-icons-container {
     margin-top: 32px;
     width: 50%;
+  }
+
+  .section-portfolio-card-links{
+    width: 35%;
   }
 }
