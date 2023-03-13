@@ -5,20 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
     <title>Daniel Mattos</title>
   </head>
   <body>
-    <div class="root-contaier ">
+    <div class="root-contaier">
       <div class="content-container">
         <section class="section-hero">
           <div class="barra-navegacao">
             <h2 class="titulo-navegacao">Daniel Mattos</h2>
             <div>
-              <a class="links-navegacao" href="">Habilidades</a>
-              <a class="links-navegacao" href="">Portfólio</a>
-              <a class="links-navegacao" href="">Experiências</a>
+              <a
+                onclick="onClickScrollTo('section-abilities')"
+                class="links-navegacao"
+                >Habilidades</a
+              >
+              <a
+                onclick="onClickScrollTo('section-portfolio')"
+                class="links-navegacao"
+                >Portfólio</a
+              >
+              <a
+                onclick="onClickScrollTo('section-experiences')"
+                class="links-navegacao"
+                >Experiências</a
+              >
             </div>
-            <button>CONTATO</button>
+            <button onclick="onClickScrollTo('section-contact')">
+              CONTATO
+            </button>
           </div>
           <div class="hero-info">
             <div>
@@ -26,33 +41,55 @@
                 Olá, Muito prazer! <br />
                 Sou o Daniel Mattos
               </h1>
-              <p class="hero-info-subtitle">Programador Full Stack formado na Kenzie Academy Brasil</p>
-              <button>ENTRAR EM CONTATO</button>
+              <p class="hero-info-subtitle">
+                Programador Full Stack formado na Kenzie Academy Brasil
+              </p>
+              <button onclick="onClickScrollTo('section-contact')">
+                ENTRAR EM CONTATO
+              </button>
               <div class="hero-info-icons-container">
                 <a>
-                  <img class="hero-info-icons-img" src="icons/github.png" alt="icone github">
+                  <img
+                    class="hero-info-icons-img"
+                    src="icons/github.png"
+                    alt="icone github"
+                  />
                 </a>
                 <a>
-                  <img class="hero-info-icons-img" src="icons/linkedin.png" alt="icone linkedin">
+                  <img
+                    class="hero-info-icons-img"
+                    src="icons/linkedin.png"
+                    alt="icone linkedin"
+                  />
                 </a>
               </div>
             </div>
             <div>
-              <img class="hero-info-image" src="icons/daniel.jpg" alt="foto daniel" />
+              <img
+                class="hero-info-image"
+                src="icons/daniel.jpg"
+                alt="foto daniel"
+              />
             </div>
           </div>
         </section>
-    
-        <section class="section-abilities">
+
+        <section class="section-abilities" id="section-abilities">
           <h2>Habilidades</h2>
           <h2 class="verde">que domino</h2>
           <div class="ability-card-container">
             <div class="ability-card">
               <div class="ability-card-icon-container">
-                <img class="ability-card-icon-image" src="icons/habilidades-gerais.jpg" alt="icone habilidades gerais" >
+                <img
+                  class="ability-card-icon-image"
+                  src="icons/habilidades-gerais.jpg"
+                  alt="icone habilidades gerais"
+                />
               </div>
               <h5>Habilidades Gerais</h5>
-              <p class="card">Técnologias utilizadas no dia a dia de programação</p>
+              <p class="card">
+                Técnologias utilizadas no dia a dia de programação
+              </p>
               <ul class="ability-list">
                 <li>Git</li>
                 <li>GitHub</li>
@@ -64,10 +101,16 @@
             </div>
             <div class="ability-card">
               <div class="ability-card-icon-container">
-                <img class="ability-card-icon-image" src="icons/front-end-icon.png" alt="icone front-end" >
+                <img
+                  class="ability-card-icon-image"
+                  src="icons/front-end-icon.png"
+                  alt="icone front-end"
+                />
               </div>
               <h5>Front end</h5>
-              <p class="card">Ferramentas utilizadas para criação de sistemas web.</p>
+              <p class="card">
+                Ferramentas utilizadas para criação de sistemas web.
+              </p>
               <ul class="ability-list">
                 <li>HTML</li>
                 <li>CSS</li>
@@ -81,10 +124,16 @@
             </div>
             <div class="ability-card">
               <div class="ability-card-icon-container">
-                <img class="ability-card-icon-image" src="icons/back-end-icon.webp" alt="icone back-end" >
+                <img
+                  class="ability-card-icon-image"
+                  src="icons/back-end-icon.webp"
+                  alt="icone back-end"
+                />
               </div>
               <h5>Back End</h5>
-              <p class="card">Controle de banco de dados e aplicações na nuvem</p>
+              <p class="card">
+                Controle de banco de dados e aplicações na nuvem
+              </p>
               <ul class="ability-list">
                 <li>JavaScript</li>
                 <li>Node.js</li>
@@ -99,81 +148,143 @@
             </div>
           </div>
         </section>
-        <section class="section-portfolio">
+        <section class="section-portfolio" id="section-portfolio">
           <h2>Portfólio</h2>
           <h2 class="verde">de projetos</h2>
           <div class="section-portfolio-grid">
             <div class="section-portfolio-card">
-              <img class="section-portfolio-img" src="images/projeto1-portfolio.png" alt="Projeto front end">
+              <img
+                class="section-portfolio-img"
+                src="images/projeto1-portfolio.png"
+                alt="Projeto front end"
+              />
               <h5>Supermarket List</h5>
               <p class="card">Aplicação React com Express e MongoDB</p>
               <div class="section-portfolio-card-links">
                 <a>
-                  <img class="section-portfolio-card-icon-image" src="icons/icone link.png" alt="link">
+                  <img
+                    class="section-portfolio-card-icon-image"
+                    src="icons/icone link.png"
+                    alt="link"
+                  />
                 </a>
                 <a>
-                  <img class="section-portfolio-card-icon-image" src="icons/github.png" alt="github">
+                  <img
+                    class="section-portfolio-card-icon-image"
+                    src="icons/github.png"
+                    alt="github"
+                  />
                 </a>
               </div>
             </div>
             <div class="section-portfolio-card">
-              <img class="section-portfolio-img" src="images/projeto2-portfolio.png" alt="Projeto front end">
+              <img
+                class="section-portfolio-img"
+                src="images/projeto2-portfolio.png"
+                alt="Projeto front end"
+              />
               <h5>BookClub</h5>
               <p class="card">Aplicação React com Express e AWS</p>
               <div class="section-portfolio-card-links">
                 <a>
-                  <img class="section-portfolio-card-icon-image" src="icons/icone link.png" alt="link">
+                  <img
+                    class="section-portfolio-card-icon-image"
+                    src="icons/icone link.png"
+                    alt="link"
+                  />
                 </a>
                 <a>
-                  <img class="section-portfolio-card-icon-image" src="icons/github.png" alt="github">
+                  <img
+                    class="section-portfolio-card-icon-image"
+                    src="icons/github.png"
+                    alt="github"
+                  />
                 </a>
               </div>
             </div>
             <div class="section-portfolio-card">
-              <img class="section-portfolio-img" src="images/projeto3-portfolio.png" alt="Projeto back end">
+              <img
+                class="section-portfolio-img"
+                src="images/projeto3-portfolio.png"
+                alt="Projeto back end"
+              />
               <h5>DataBase Project</h5>
               <p class="card">Aplicação Python com TypeScript</p>
               <div class="section-portfolio-card-links">
                 <a>
-                  <img class="section-portfolio-card-icon-image" src="icons/icone link.png" alt="link">
+                  <img
+                    class="section-portfolio-card-icon-image"
+                    src="icons/icone link.png"
+                    alt="link"
+                  />
                 </a>
                 <a>
-                  <img class="section-portfolio-card-icon-image" src="icons/github.png" alt="github">
+                  <img
+                    class="section-portfolio-card-icon-image"
+                    src="icons/github.png"
+                    alt="github"
+                  />
                 </a>
               </div>
             </div>
           </div>
-          <section class="section-experiences">
+          <section class="section-experiences" id="section-experiences">
             <h2>Experiências</h2>
-          <h2 class="verde">Profissionais</h2>
-          <div class="section-experiences-card">
-            <img class="section-experiences-card-img" src="icons/tech-leader-icon.jpg">
-            <div class="section-experiences-card-text-container">
-              <h6 class="section-experiences-card-title">Tech Leader</h6>
-              <p class="section-experiences-card-subtitle">Participei de projetos na função de tech leader</p>
-              <p class="section-experiences-card-text">Aplicação de uma loja on-line de leilão de carros</p>
+            <h2 class="verde">Profissionais</h2>
+            <div class="section-experiences-card">
+              <img
+                class="section-experiences-card-img"
+                src="icons/tech-leader-icon.jpg"
+              />
+              <div class="section-experiences-card-text-container">
+                <h6 class="section-experiences-card-title">Tech Leader</h6>
+                <p class="section-experiences-card-subtitle">
+                  Participei de projetos na função de tech leader
+                </p>
+                <p class="section-experiences-card-text">
+                  Aplicação de uma loja on-line de leilão de carros
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="section-experiences-card">
-            <img class="section-experiences-card-img" src="icons/fullstack-icon.png">
-            <div class="section-experiences-card-text-container">
-              <h6 class="section-experiences-card-title">Aplicação Full Stack</h6>
-              <p class="section-experiences-card-subtitle">Projeto realizado utilizando React e Express</p>
-              <p class="section-experiences-card-text">Aplicação inspirada no Spotify, semelhante a um app musical</p>
+            <div class="section-experiences-card">
+              <img
+                class="section-experiences-card-img"
+                src="icons/fullstack-icon.png"
+              />
+              <div class="section-experiences-card-text-container">
+                <h6 class="section-experiences-card-title">
+                  Aplicação Full Stack
+                </h6>
+                <p class="section-experiences-card-subtitle">
+                  Projeto realizado utilizando React e Express
+                </p>
+                <p class="section-experiences-card-text">
+                  Aplicação inspirada no Spotify, semelhante a um app musical
+                </p>
+              </div>
             </div>
-          </div>
           </section>
         </section>
-        <section class="section-contact">
+        <section class="section-contact" id="section-contact">
           <h2>Entre</h2>
           <h2 class="verde">em contato</h2>
-          <p class="">Estou à disposição para ajudar o seu projeto ou a sua empresa</p>
+          <p class="">
+            Estou à disposição para ajudar o seu projeto ou a sua empresa
+          </p>
           <div class="section-contact-item">
-            <img src="icons/email-icon.png" alt="Email icon" class="section-contact-item-icon">
+            <img
+              src="icons/email-icon.png"
+              alt="Email icon"
+              class="section-contact-item-icon"
+            />
             <p>dmattos1001@hotmail.com</p>
           </div>
           <div class="section-contact-item">
-            <img src="icons/whats-icon.png" alt="Whats icon" class="section-contact-item-icon">
+            <img
+              src="icons/whats-icon.png"
+              alt="Whats icon"
+              class="section-contact-item-icon"
+            />
             <p>(32)99923-6999</p>
           </div>
         </section>
@@ -184,10 +295,18 @@
         <h2 class="titulo-navegacao">Daniel Mattos</h2>
         <div class="footer-social-icons-container">
           <a>
-            <img class="section-portfolio-card-icon-image" src="icons/linkedin.png" alt="link">
+            <img
+              class="section-portfolio-card-icon-image"
+              src="icons/linkedin.png"
+              alt="link"
+            />
           </a>
           <a>
-            <img class="section-portfolio-card-icon-image" src="icons/github.png" alt="github">
+            <img
+              class="section-portfolio-card-icon-image"
+              src="icons/github.png"
+              alt="github"
+            />
           </a>
         </div>
       </div>
