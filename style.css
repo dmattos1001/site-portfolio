@@ -70,6 +70,9 @@ footer {
   justify-content: center;
 }
 
+a {
+  color: #1e1e1e;
+}
 .root-contaier {
   display: flex;
   width: 100%;
@@ -141,7 +144,7 @@ footer {
 }
 
 .hero-info-image {
-  height: 594px;
+  height: 100%;
   width: 542px;
   border-radius: 30px;
   border: 3px solid #219653;
@@ -336,6 +339,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-bottom: 16px;
 }
 
 .section-contact-item-icon {
