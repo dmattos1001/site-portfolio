@@ -84,19 +84,17 @@
   }
 
   .footer-content {
-    width: 100%;
+    width: 94vw;
   }
 
   .section-experiences-card {
     width: 90vw;
-   
   }
 
   .section-portfolio-grid {
     row-gap: 36px;
     grid-template-columns: auto;
     margin-top: 24px;
-    
   }
 
   .hero-info-icons-container {
@@ -104,7 +102,21 @@
     width: 50%;
   }
 
-  .section-portfolio-card-links{
+  .section-portfolio-card-links {
     width: 35%;
+  }
+
+  .section-experiences-card {
+    width: 88%;
+  }
+
+  .section-contact {
+    padding-bottom: 50px;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .footer-social-icons-container {
+    width: 340px;
   }
 }
